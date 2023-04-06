@@ -14,6 +14,7 @@ return {
           "query",
           "yaml",
           "go",
+          "java",
         })
       end
     end,
