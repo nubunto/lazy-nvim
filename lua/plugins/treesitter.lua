@@ -15,6 +15,10 @@ return {
           "yaml",
           "go",
           "java",
+          "elixir",
+          "html",
+          "heex",
+          "eex",
         })
       end
     end,
