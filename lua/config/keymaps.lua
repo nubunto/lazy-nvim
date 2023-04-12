@@ -50,3 +50,11 @@ end)
 map({ "n" }, "L", function()
   hop.hint_lines_skip_whitespace({ direction = directions.BEFORE_CURSOR })
 end)
+
+map({ "n" }, "<leader>p", function()
+  hop.hint_patterns({ direction = directions.AFTER_CURSOR })
+end)
+
+map({ "n" }, "<leader>P", function()
+  hop.hint_patterns({ direction = directions.BEFORE_CURSOR })
+end)
