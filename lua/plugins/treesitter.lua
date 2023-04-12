@@ -6,13 +6,7 @@ return {
 
       if type(opts.ensure_installed) == "table" then
         vim.list_extend(opts.ensure_installed, {
-          "vimdoc",
-          "bash",
           "lua",
-          "markdown",
-          "markdown_inline",
-          "query",
-          "yaml",
           "go",
           "java",
           "elixir",
