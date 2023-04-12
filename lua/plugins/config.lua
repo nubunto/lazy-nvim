@@ -37,8 +37,8 @@ return {
   },
 
   {
-    "phaazon/hop.nvim",
-    branch = "v2",
+    "nubunto/hop.nvim",
+    branch = "fix-empty-line-hint",
     config = function()
       require("hop").setup({})
     end,
