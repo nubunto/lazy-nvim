@@ -43,14 +43,6 @@ map({ "n" }, "S", function()
   hop.hint_char2({ direction = directions.BEFORE_CURSOR })
 end)
 
-map({ "n" }, "l", function()
-  hop.hint_lines_skip_whitespace({ direction = directions.AFTER_CURSOR })
-end)
-
-map({ "n" }, "L", function()
-  hop.hint_lines_skip_whitespace({ direction = directions.BEFORE_CURSOR })
-end)
-
 map({ "n" }, "<leader>p", function()
   hop.hint_patterns({ direction = directions.AFTER_CURSOR })
 end)
