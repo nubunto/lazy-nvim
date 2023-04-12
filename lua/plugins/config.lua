@@ -6,7 +6,6 @@ return {
     end,
   },
 
-  { "catppuccin/nvim", name = "catppuccin" },
   { "lunarvim/Onedarker.nvim" },
 
   {
