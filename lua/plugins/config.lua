@@ -7,11 +7,15 @@ return {
   },
 
   { "lunarvim/Onedarker.nvim" },
+  {
+    "olimorris/onedarkpro.nvim",
+    priority = 1000 -- Ensure it loads first
+  },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onedarker",
+      colorscheme = "onedark_dark",
     },
   },
 
