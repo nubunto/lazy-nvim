@@ -1,8 +1,21 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
-  opts = {
-    window = {
-      position = "right",
-    },
-  },
+  opts = function(_, opts)
+    opts.default_component_configs.symbols = {
+        -- Change type
+        added     = "✚",
+        deleted   = "✖",
+        modified  = "",
+        renamed   = "",
+
+        -- Status type
+        untracked = "",
+        ignored   = "",
+        unstaged  = "",
+        staged    = "",
+        conflict  = "",
+    }
+    opts.window = { position = "right" }
+    opts.close_if_last_window = true
+  end,
 }
