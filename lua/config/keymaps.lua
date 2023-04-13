@@ -12,9 +12,6 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
-map({ "n" }, "<leader>o", "<cmd>Neotree toggle<cr>")
-map({ "n" }, "<leader>c", "<cmd>bd<cr>")
-
 -- Hop keymaps
 local hop = require("hop")
 local directions = require("hop.hint").HintDirection
