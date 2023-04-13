@@ -55,7 +55,6 @@ return {
   "goolord/alpha-nvim",
   opts = function(_, opts)
     local phrase_box = random_phrase()
-    print(string.len(phrase_box.border), string.len(phrase_box.middle))
 
     local logo = f([[
                           :::!~!!!!!:.
@@ -81,5 +80,4 @@ return {
       ]])
     opts.section.header.val = vim.split(logo, "\n")
   end,
-
 }
