@@ -48,4 +48,11 @@ return {
     event = "BufEnter",
   },
 
+  {
+    "aserowy/tmux.nvim",
+    config = function()
+      require('tmux').setup()
+    end,
+    event = "VimEnter"
+  }
 }
