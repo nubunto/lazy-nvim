@@ -34,10 +34,10 @@ local function f(str)
 end
 
 local function random_phrase()
-  local phrases_path = vim.fn.stdpath("config").."/alpha_phrases.lua"
+  local phrases_path = vim.fn.stdpath("config").."/alpha/phrases.lua"
   local phrases = { 'I choose violence today' }
   if vim.loop.fs_stat(phrases_path) then
-    local phrases_file = assert( loadfile(vim.fn.stdpath("config").."/alpha_phrases.lua") )
+    local phrases_file = assert( loadfile(phrases_path) )
     phrases = phrases_file()
   end
   local phrase = phrases[math.random(#phrases)]
@@ -52,12 +52,12 @@ local function random_phrase()
 end
 
 return {
-    "goolord/alpha-nvim",
-    opts = function(_, opts)
-      local phrase_box = random_phrase()
-      print(string.len(phrase_box.border), string.len(phrase_box.middle))
+  "goolord/alpha-nvim",
+  opts = function(_, opts)
+    local phrase_box = random_phrase()
+    print(string.len(phrase_box.border), string.len(phrase_box.middle))
 
-      local logo = f([[
+    local logo = f([[
                           :::!~!!!!!:.
                       .xUHWH!! !!?M88WHX:.
                     .X*#M@$!!  !X!M$$$$$$WWx:.
@@ -79,7 +79,7 @@ return {
     $R@i.~~ !     :   ~$$$$$B$$en:`` ---- {phrase_box.middle}
     ?MXT@Wx.~    :     ~"##*$$$$M~        {phrase_box.border}
       ]])
-      opts.section.header.val = vim.split(logo, "\n")
-    end,
+    opts.section.header.val = vim.split(logo, "\n")
+  end,
 
 }

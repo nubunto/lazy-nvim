@@ -7,4 +7,5 @@ return {
   "Karma Yoga through this coding session",
   "Simple and boring > short and clever",
   "Time to turn coffee into code",
+  "Ask me about my Neovim config",
 }
