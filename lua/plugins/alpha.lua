@@ -58,8 +58,6 @@ return {
       print(string.len(phrase_box.border), string.len(phrase_box.middle))
 
       local logo = f([[
-      Knowledgeful Skull says:
-
                           :::!~!!!!!:.
                       .xUHWH!! !!?M88WHX:.
                     .X*#M@$!!  !X!M$$$$$$WWx:.
