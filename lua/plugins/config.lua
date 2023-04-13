@@ -9,7 +9,7 @@ return {
   { "lunarvim/Onedarker.nvim" },
   {
     "olimorris/onedarkpro.nvim",
-    priority = 1000 -- Ensure it loads first
+    priority = 1000, -- Ensure it loads first
   },
 
   {
@@ -48,4 +48,5 @@ return {
     end,
     event = "BufEnter",
   },
+
 }
