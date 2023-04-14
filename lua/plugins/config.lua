@@ -1,12 +1,5 @@
 return {
   {
-    "L3MON4D3/LuaSnip",
-    keys = function()
-      return {}
-    end,
-  },
-
-  {
     "olimorris/onedarkpro.nvim",
     priority = 1000, -- Ensure it loads first
   },
