@@ -63,9 +63,7 @@ wk.register({
       "Add file to Harpoon"
     },
     l = {
-      function ()
-        ui.toggle_quick_menu()
-      end,
+      "<cmd>Telescope harpoon marks<cr>",
       "Toggle quick menu"
     },
     c = {
