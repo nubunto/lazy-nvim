@@ -1,18 +1,5 @@
 return {
   {
-    "olimorris/onedarkpro.nvim",
-    priority = 1000, -- Ensure it loads first
-  },
-
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "onedark_dark",
-    },
-  },
-
-
-  {
     "ggandor/flit.nvim",
     enabled = false,
   },
@@ -31,19 +18,12 @@ return {
   },
 
   {
-    "aserowy/tmux.nvim",
-    config = function()
-      require('tmux').setup()
-    end,
-    event = "VimEnter"
-  },
-  {
     'ThePrimeagen/harpoon',
     config = function ()
       require('harpoon').setup()
     end,
   },
-  
+
   {
     "nvim-telescope/telescope.nvim",
     opts = {
