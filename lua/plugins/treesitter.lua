@@ -15,6 +15,7 @@ return {
           "html",
           "heex",
           "eex",
+          "prisma",
         })
       end
     end,
