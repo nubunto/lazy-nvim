@@ -3,9 +3,22 @@ return {
     "ggandor/flit.nvim",
     enabled = false,
   },
+
   {
     "ggandor/leap.nvim",
     enabled = false,
+  },
+
+  {
+    "olimorris/onedarkpro.nvim",
+    priority = 1000, -- Ensure it loads first
+  },
+
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "onedark_dark"
+    }
   },
 
   {
@@ -18,9 +31,9 @@ return {
   },
 
   {
-    'ThePrimeagen/harpoon',
-    config = function ()
-      require('harpoon').setup()
+    "ThePrimeagen/harpoon",
+    config = function()
+      require("harpoon").setup()
     end,
   },
 
