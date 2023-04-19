@@ -15,9 +15,14 @@ return {
   },
 
   {
+    "Yazeed1s/minimal.nvim",
+    priority = 1000,
+  },
+
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onedark_dark"
+      colorscheme = "minimal-base16"
     }
   },
 
