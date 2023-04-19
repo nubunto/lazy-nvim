@@ -15,7 +15,6 @@ return {
         staged    = "",
         conflict  = "",
     }
-    opts.window = { position = "right" }
     opts.close_if_last_window = true
     opts.log_level = "error"
   end,
