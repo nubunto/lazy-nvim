@@ -57,26 +57,27 @@ return {
     local phrase_box = random_phrase()
 
     local logo = f([[
-                          :::!~!!!!!:.
-                      .xUHWH!! !!?M88WHX:.
-                    .X*#M@$!!  !X!M$$$$$$WWx:.
-                  :!!!!!!?H! :!$!$$$$$$$$$$8X:
-                  !!~  ~:~!! :~!$!#$$$$$$$$$$8X:
-                :!~::!H!<   ~.U$X!?R$$$$$$$$MM!
-                ~!~!!!!~~ .:XW$$$U!!?$$$$$$RMM!
-                  !:~~~ .:!M"T#$$$$WX??#MRRMMM!
-                  ~?WuxiW*`   `"#$$$$8!!!!??!!!
-                :X- M$$$$       `"T#$T~!8$WUXU~
-                :%`  ~#$$$m:        ~!~ ?$$$$$$
-              :!`.-   ~T$$$$8xx.  .xWW- ~""##*"
-    .....   -~~:<` !    ~?T#$$@@W@*?$$      /`
-    W$@@M!!! .!~~ !!     .:XUW$W!~ `"~:    :
-    #"~~`.:x%`!!  !H:   !WM$$$$Ti.: .!WUn+!`
-    :::~:!!`:X~ .: ?H.!u "$$$B$$$!W:U!T$$M~
-    .~~   :X@!.-~   ?@WTWo("*$$$W$TH$! `
-    Wi.~!X$?!-~    : ?$$$B$Wu("**$RM!     {phrase_box.border}
-    $R@i.~~ !     :   ~$$$$$B$$en:`` ---- {phrase_box.middle}
-    ?MXT@Wx.~    :     ~"##*$$$$M~        {phrase_box.border}
+      NO!                          MNO!
+     MNO!!         [NBK]          MNNOO!
+   MMNO!                           MNNOO!!
+ MNOONNOO!   MMMMMMMMMMPPPOII!   MNNO!!!!
+ !O! NNO! MMMMMMMMMMMMMPPPOOOII!! NO!
+       ! MMMMMMMMMMMMMPPPPOOOOIII! !
+        MMMMMMMMMMMMPPPPPOOOOOOII!!
+        MMMMMOOOOOOPPPPPPPPOOOOMII!
+        MMMMM..    OPPMMP    .,OMI!
+        MMMM::   o.,OPMP,.o   ::I!!
+          NNM:::.,,OOPM!P,.::::!!
+         MMNNNNNOOOOPMO!!IIPPO!!O!
+         MMMMMNNNNOO:!!:!!IPPPPOO!
+          MMMMMNNOOMMNNIIIPPPOO!!
+             MMMONNMMNNNIIIOO!
+           MN MOMMMNNNIIIIIO! OO
+          MNO! IiiiiiiiiiiiI OOOO
+     NNN.MNO!   O!!!!!!!!!O   OONO NO!
+    MNNNNNO!    OOOOOOOOOOO    MMNNON!
+      MNNNNO!    PPPPPPPPP    MMNON!
+         OO!                   ON!
       ]])
     opts.section.header.val = vim.split(logo, "\n")
   end,
