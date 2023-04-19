@@ -1,41 +1,5 @@
 return {
   {
-    "ggandor/flit.nvim",
-    enabled = false,
-  },
-
-  {
-    "ggandor/leap.nvim",
-    enabled = false,
-  },
-
-  {
-    "olimorris/onedarkpro.nvim",
-    priority = 1000, -- Ensure it loads first
-  },
-
-  {
-    "Yazeed1s/minimal.nvim",
-    priority = 1000,
-  },
-
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "minimal-base16"
-    }
-  },
-
-  {
-    "nubunto/hop.nvim",
-    branch = "fix-empty-line-hint",
-    config = function()
-      require("hop").setup({})
-    end,
-    event = "BufEnter",
-  },
-
-  {
     "ThePrimeagen/harpoon",
     config = function()
       require("harpoon").setup()
