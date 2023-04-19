@@ -54,7 +54,7 @@ end
 return {
   "goolord/alpha-nvim",
   opts = function(_, opts)
-    local phrase_box = random_phrase()
+    -- local phrase_box = random_phrase()
 
     local logo = f([[
       NO!                          MNO!
