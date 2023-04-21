@@ -44,3 +44,6 @@ require("lazy").setup({
 })
 
 require("telescope").load_extension("harpoon")
+require('luasnip').config.set_config({
+  ['region_check_events'] = 'InsertEnter'
+})
