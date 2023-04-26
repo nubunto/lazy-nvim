@@ -50,13 +50,11 @@ end)
 
 local wk = require('which-key')
 local mark = require('harpoon.mark')
-local ui = require('harpoon.ui')
-
 
 wk.register({
   ["<leader>j"] = {
     name = "+harpoon",
-    m = {
+    a = {
       function ()
         mark.add_file()
       end,
