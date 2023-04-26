@@ -47,3 +47,7 @@ require("telescope").load_extension("harpoon")
 require('luasnip').config.set_config({
   ['region_check_events'] = 'InsertEnter'
 })
+
+for _, lang in pairs({"go"}) do
+  require('luasnip').add_snippets(lang, require("snippets."..lang), {key=lang})
+end
