@@ -3,3 +3,4 @@
 -- Add any additional options here
 
 vim.o.list = false
+vim.g.editorconfig = true

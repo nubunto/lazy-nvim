@@ -15,7 +15,7 @@ return {
           "html",
           "heex",
           "eex",
-          "prisma",
+          "terraform"
         })
       end
     end,
