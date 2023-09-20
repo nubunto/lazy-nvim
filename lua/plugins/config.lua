@@ -5,7 +5,16 @@ return {
       require("harpoon").setup()
     end,
   },
-
+  {
+    "ThePrimeagen/refactoring.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    config = function()
+      require("refactoring").setup()
+    end,
+  },
   {
     "nvim-telescope/telescope.nvim",
     opts = {
